@@ -31,7 +31,7 @@ const contactsSlice = createSlice({
     [fetchContacts.rejected](state, action) {
       state.isLoading = false;
       state.error = action.payload;
-      console.log(action.payload);
+
     },
 
     [addContacts.fulfilled](state, action) {
@@ -63,7 +63,7 @@ const contactsSlice = createSlice({
     [deleteContacts.rejected](state, action) {
       state.isLoading = false;
       state.error = action.payload;
-      console.log(action.payload);
+      
     },
   },
 });
